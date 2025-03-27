@@ -69,7 +69,7 @@ sudo chmod -R 775 /var/www/symfony/var /var/www/symfony/public
 
 ### 5. Configure Database
 
-Create an empty database name `ticketer` via the SQL command `CREATE DATABASE ticketer`.
+Create an empty database named `ticketer` via the SQL command `CREATE DATABASE ticketer`.
 
 Update the `.env` file with your MySQL credentials:
 ```
