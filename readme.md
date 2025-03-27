@@ -68,12 +68,15 @@ sudo chmod -R 775 /var/www/symfony/var /var/www/symfony/public
 ```
 
 ### 5. Configure Database
+
+Create an empty database name `ticketer` via the SQL command `CREATE DATABASE ticketer`.
+
 Update the `.env` file with your MySQL credentials:
 ```
-DATABASE_URL="mysql://username:password@127.0.0.1:3306/dbname"
+DATABASE_URL="mysql://username:password@127.0.0.1:3306/ticketer"
 ```
 
-Run database migrations:
+Run database migrations in the project root folder:
 ```bash
 php bin/console doctrine:migrations:migrate
 ```
